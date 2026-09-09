@@ -1,0 +1,677 @@
+{
+  "homepage": {
+    "hero": {
+      "enabled": true,
+      "videoUrl": "/uploads/1788880847782-722561681.mp4",
+      "buttonLink": "https://onelink.to/xpxtfg",
+      "buttonText": "Download the app",
+      "headlineLine1": "The fuel that lets you GO GO GO.",
+      "headlineLine2": "The app that lets you SAVE SAVE SAVE."
+    },
+    "bentoGrid": {
+      "igCard": {
+        "link": "https://www.instagram.com/conoco/",
+        "title": "One tank, four destinations, zero PTO wasted.",
+        "handle": "@petrol",
+        "enabled": true,
+        "imageUrl": "/uploads/1788876797391-897771770.png",
+        "subtitle": "Ready to GO GO GO?"
+      },
+      "gameCard": {
+        "title": "Test your sleuthing skills",
+        "enabled": true,
+        "imageUrl": "/uploads/1788876739459-205837547.png",
+        "buttonLink": "https://www.phillips66stadiumsketch.com/",
+        "buttonText": "Start your search",
+        "description": "One tank, four destinations, zero PTO wasted."
+      },
+      "tuesdayCard": {
+        "badge": "20¢",
+        "title": "Ten Cent Tuesdays",
+        "enabled": true,
+        "buttonLink": "https://onelink.to/xpxtfg",
+        "buttonText": "Start saving now",
+        "description": "Save an extra 10¢/gal every first Tuesday of the month with the Fuel Forward® App."
+      }
+    },
+    "newsletter": {
+      "title": "We're Hiring!",
+      "enabled": true,
+      "termsText": "By clicking Submit you agree to our Privacy Statement and Terms & Conditions. This site is protected by reCAPTCHA.",
+      "buttonText": "Submit",
+      "description": "If you're interested in one of our positions, start by applying here and attaching your resume."
+    },
+    "featureCards": {
+      "extraCards": [],
+      "placesCard": {
+        "title": "Thousands of places to save.",
+        "enabled": true,
+        "imageUrl": "/uploads/1788884985355-868728880.png",
+        "buttonLink": "/rewards",
+        "buttonText": "Learn more",
+        "description": "The Fuel Forward® App gets you a lower price at Phillips 66®, Petrol® and 76® stations in seconds. Download to fill up the smart way."
+      },
+      "surveyCard": {
+        "title": "You’ve got opinions. We’ve got rewards.",
+        "enabled": true,
+        "imageUrl": "",
+        "buttonLink": "https://www.conocofeedback.com/p66feedback/visit_conoco/home",
+        "buttonText": "Take a survey",
+        "description": "Visited a station lately? Take a quick survey about your recent purchase and you could win free gas."
+      },
+      "stationCard": {
+        "title": "Find your closest station.",
+        "enabled": true,
+        "bgImageUrl": "/uploads/street-map-bg.jpeg",
+        "buttonLink": "/contact",
+        "buttonText": "Find your fuel",
+        "description": "You’re on the go. We’re on your route. Tap below to find your nearest station, or map your next adventure with the Plan a Trip tool.",
+        "pumpsImageUrl": "/uploads/1788857949641-609400596.jpeg"
+      },
+      "kickbackCard": {
+        "title": "KickBack® Rewards maximize your miles.",
+        "enabled": true,
+        "imageUrl": "",
+        "buttonLink": "/rewards",
+        "buttonText": "Learn more",
+        "description": "Earn rewards on fuel and other purchases to spend like cash across thousands of forecourt locations."
+      }
+    },
+    "specialtyApp": {
+      "enabled": true,
+      "leftTitle": "Save on Every.<br />Single. Tank.",
+      "termsText": "Terms & conditions apply. See app for details.",
+      "appIconUrl": "/uploads/1788877359189-284862947.png",
+      "bgImageUrl": "/uploads/street-map-bg.jpeg",
+      "rightTitle": "Stack and save. Again and again.",
+      "leftCtaLink": "/contact",
+      "leftCtaText": "Find a station",
+      "appStoreLink": "https://apps.apple.com/us/app/my-phillips-66/id922282104",
+      "phoneImageUrl": "/uploads/Cropped-phone.jpg",
+      "googlePlayLink": "https://play.google.com/store/apps/details?id=com.p66.b2c.stationfinder.p66",
+      "leftDescription": "Get the Fuel Forward® App to save up to 20¢/gallon* on your first fill-up.",
+      "rightDescription": "Combine multiple discounts for bigger savings every time you fuel up."
+    },
+    "broncosBanner": {
+      "title": "BRONCOS FANS. GO VIP.",
+      "enabled": true,
+      "logo1Url": "",
+      "logo2Url": "",
+      "termsText": "*Terms and conditions apply. See official rules for details at www.petrol.com/broncos-rules.",
+      "buttonLink": "https://www.conoco.com/broncos/",
+      "buttonText": "Learn More",
+      "description": "Watch the Denver Broncos battle Miami on December 6, 2026 in style. Now through 11/15/26, buy 8+ gallons* with the Fuel Forward® App for a chance to win premium tickets, pregame field passes and so much more.",
+      "bannerImageUrl": "/uploads/1788878098681-462509007.jpeg"
+    },
+    "socialRatings": {
+      "enabled": true,
+      "socialCard": {
+        "title": "Follow to stay in the know while you goss.",
+        "enabled": true,
+        "youtubeUrl": "https://youtube.com/playlist?list=PLhZANlfVQtQeQq02_i-P-FzxJk8lOKgX-",
+        "facebookUrl": "https://www.facebook.com/conoco",
+        "instagramUrl": "https://www.instagram.com/conoco/"
+      },
+      "ratingsCard": {
+        "appName": "Fuel Forward® App",
+        "enabled": true,
+        "appIconUrl": "/uploads/1788886108744-817538374.png",
+        "buttonLink": "https://onelink.to/xpxtfg",
+        "buttonText": "Download the app",
+        "rating1Link": "https://apps.apple.com/us/app/my-phillips-66/id922282104",
+        "rating2Link": "https://play.google.com/store/apps/details?id=com.p66.b2c.stationfinder.p66",
+        "rating1Count": "53K reviews",
+        "rating1Value": "4.9",
+        "rating2Count": "7.99K reviews",
+        "rating2Value": "4.4",
+        "rating1ImageUrl": "/uploads/app-store.png",
+        "rating2ImageUrl": "/uploads/google-play.png"
+      },
+      "testimonialCard": {
+        "quote": "“The Fuel Forward app makes filling up so easy. I save money and time on every visit.”",
+        "stars": "★★★★★",
+        "author": "— Sarah M., App User",
+        "enabled": true,
+        "buttonLink": "https://onelink.to/xpxtfg",
+        "buttonText": "Try the app"
+      }
+    }
+  },
+  "general": {
+    "email": "contact@sb-conoco.com",
+    "phone": "(281) 555-0199",
+    "address": "14205 Katy Freeway, Houston, TX",
+    "country": "United States",
+    "tagline": "Premier 24/7 US Fuel, Ultra-Rapid EV Charging & Convenience Forecourt",
+    "postcode": "77079",
+    "vatNumber": "EIN 47-8291045",
+    "companyReg": "US-TX-882914",
+    "fleetEmail": "fleets@sb-conoco.com",
+    "storeHours": "Open 24/7 / 365 Days",
+    "stationName": "S&B Conoco Forecourt & C-Store",
+    "jetWashHours": "06:00 AM - 10:00 PM Daily",
+    "noticeBanner": {
+      "text": "⚡ NEW: 150kW Ultra-Rapid Dual EV Charging Hub & Touchless Soft-Cloth Car Wash now open!",
+      "badge": "Forecourt Update",
+      "enabled": true
+    },
+    "googleMapsUrl": "https://maps.google.com/?q=14205+Katy+Freeway,+Houston,+TX+77079",
+    "emergencyPhone": "1-800-527-5476",
+    "forecourtHours": "Open 24 Hours / 7 Days a Week"
+  },
+  "hero": {
+    "stats": [
+      {
+        "label": "Forecourt Access",
+        "value": "24/7 / 365 Days"
+      },
+      {
+        "label": "EV Charging Speed",
+        "value": "Up to 150 kW"
+      },
+      {
+        "label": "Fuel Standard",
+        "value": "Top Tier™ Certified"
+      },
+      {
+        "label": "Commercial Fleets",
+        "value": "350+ Accounts"
+      }
+    ],
+    "headline": "The app that lets you SAVE SAVE SAVE.",
+    "subheadline": "Fuel up with Top Tier™ Conoco gasoline, grab barista-brewed coffee and fresh deli bites, and save up to 25¢/gal with the Fuel Forward® app."
+  },
+  "navigation": {
+    "footer": {
+      "enabled": true,
+      "logoUrl": "",
+      "col1Links": [
+        {
+          "to": "/about",
+          "name": "About Us"
+        },
+        {
+          "to": "/contact",
+          "name": "Contact Us"
+        }
+      ],
+      "col1Title": "",
+      "col2Links": [
+        {
+          "to": "/#newsletter",
+          "name": "Email Newsletter"
+        },
+        {
+          "to": "/about",
+          "name": "Accessibility Statement"
+        }
+      ],
+      "col2Title": "",
+      "appHeading": "Make every gallon go further. Get the app.",
+      "legalLinks": [
+        {
+          "to": "#cookies",
+          "name": "Cookies Settings"
+        },
+        {
+          "to": "/about",
+          "name": "Terms & Conditions"
+        },
+        {
+          "to": "/about",
+          "name": "Privacy Statement"
+        },
+        {
+          "to": "/about",
+          "name": "California Supply Disclosure"
+        }
+      ],
+      "youtubeUrl": "https://youtube.com/playlist?list=PLhZANlfVQtQeQq02_i-P-FzxJk8lOKgX-",
+      "facebookUrl": "https://www.facebook.com/conoco",
+      "appStoreLink": "https://apps.apple.com/us/app/my-phillips-66/id922282104",
+      "instagramUrl": "https://www.instagram.com/conoco",
+      "copyrightText": "Londis® and its respective logos are registered trademarks owned by Phillips 66 Company. KickBack and its respective logos are registered trademarks of KickBack Points, LLC. Other products and logos mentioned herein may be respective owners.\n",
+      "googlePlayLink": "https://play.google.com/store/apps/details?id=com.p66.b2c.stationfinder.p66",
+      "showAppDownload": true
+    },
+    "navbar": {
+      "links": [
+        {
+          "to": "/about",
+          "name": "About"
+        },
+        {
+          "to": "/store",
+          "name": "Our Products"
+        },
+        {
+          "to": "/cards-rewards",
+          "name": "Cards & Rewards"
+        },
+        {
+          "to": "/contact",
+          "name": "Contact Us"
+        }
+      ],
+      "enabled": true,
+      "logoUrl": "/uploads/1788864126350-568304048.jpeg",
+      "ctaButtonLink": "/contact",
+      "ctaButtonText": "Find a station",
+      "showCtaButton": true
+    },
+    "topBar": {
+      "enabled": true,
+      "phoneLink": "tel:+918778998453",
+      "phoneNumber": "+91 87789-98453",
+      "locationText": "Unitedstates",
+      "showSupplierShape": true,
+      "showSupplierButton": true,
+      "supplierButtonLink": "/fleet",
+      "supplierButtonText": "Become A Fuel Supplier",
+      "showLanguageSwitcher": true,
+      "supplierShapeImageUrl": "/uploads/go-shape-londis-green-utility-bar.png"
+    }
+  },
+  "contact_page_cms": {
+    "hero": {
+      "badge": "Customer Care & Support",
+      "title": "Contact Us",
+      "subtitle": "Your car knows and we'd like to know too. Drop us a line below."
+    },
+    "topics": [
+      "Personnel & service",
+      "Station facility & equipment",
+      "ADA related",
+      "Fuel quality",
+      "Credit card & Fuel cards",
+      "Kickback & Forecourt points",
+      "Promotions & Offers",
+      "Pricing",
+      "Mobile App",
+      "Visitor Feedback Survey",
+      "Other"
+    ],
+    "bentoCards": [
+      {
+        "id": "1",
+        "lines": [
+          "Available Monday – Friday",
+          "8 a.m.-5 p.m. Central Time",
+          "1-800-527-5476"
+        ],
+        "phone": "1-800-527-5476",
+        "title": "Customer service department"
+      },
+      {
+        "id": "2",
+        "lines": [
+          "Consumer Services Department",
+          "P.O. Box 7200",
+          "Bartlesville, OK 74005"
+        ],
+        "phone": "",
+        "title": "Mailing address"
+      },
+      {
+        "id": "3",
+        "lines": [
+          "To find out information on how you can become a marketer or reseller, check out our Conoco® Fuel Supplier Website."
+        ],
+        "title": "Interested in growing with us?",
+        "linkUrl": "http://www.phillips66fuelsupplier.com/",
+        "linkText": "Conoco® Fuel Supplier Website."
+      }
+    ],
+    "formSettings": {
+      "optInText": "Sign up for email updates from Phillips 66® and a chance to win $500 in promo items and fuel cards each quarter.",
+      "disclaimerText": "By clicking the SUBMIT button you agree to the Privacy Statement and Terms & Conditions."
+    },
+    "twoColumnCards": [
+      {
+        "id": "1",
+        "phone": "1-855-513-1176",
+        "title": "Conoco® Credit Card Inquiries.",
+        "imageUrl": "https://phillips66.widen.net/content/inihlwr22p/jpeg/P66-1129-Credit-Card-Navigation_654x480.jpeg?position=c&color=ffffffff&quality=100&u=pqrmwb",
+        "buttonLink": "/fleet",
+        "buttonText": "Learn more",
+        "description": "For questions regarding Conoco® personal credit cards, please call: 1-855-513-1176."
+      },
+      {
+        "id": "2",
+        "phone": "",
+        "title": "KickBack® Rewards Inquiries",
+        "imageUrl": "https://phillips66.widen.net/content/nacz2a8eto/jpeg/P66-1129%20Kickback%20Tile_654x480.jpeg?position=c&color=ffffffff&quality=100&u=pqrmwb",
+        "buttonLink": "https://kickbackpoints.com/contact-us/",
+        "buttonText": "Kickback® email form",
+        "description": "Get rewarded for every mile. Earn points on top of savings with a KickBack® Rewards Card."
+      }
+    ]
+  },
+  "about_page_cms": {
+    "hero": {
+      "title": "Ready. Set.\nGO GO GO.",
+      "subtitle": "There’s GO in everything you do. From 1,000-mile road trips and spontaneous adventures to conquering mundane errands and tackling grocery runs. S&B Forecourt isn’t just about getting you from point A to point B; we are here to fuel all the ways you GO GO GO.",
+      "textColor": "white",
+      "bgMediaUrl": "/uploads/1788900304070-836634647.png",
+      "bgMediaType": "image",
+      "overlayStyle": "none"
+    },
+    "splitCards": [
+      {
+        "id": "split-1",
+        "title": "A Century of Adventuring",
+        "imageUrl": "/uploads/1788900912965-809170524.png",
+        "buttonLink": "",
+        "buttonText": "",
+        "description": "From the early days of Conoco Travel Bureau to today’s modern stations, Conoco has been a source of inspiration and adventure for America’s drivers.",
+        "imagePosition": "right"
+      },
+      {
+        "id": "split-2",
+        "title": "Locations Nationwide",
+        "imageUrl": "/uploads/1788900664608-296878045.png",
+        "buttonLink": "/contact",
+        "buttonText": "Find a station",
+        "description": "Find a station near you for fuel, convenience and the essentials that keep you GOing.",
+        "imagePosition": "left"
+      }
+    ],
+    "actionSection": {
+      "title": "GO Where the Action Is",
+      "enabled": true,
+      "subtitle": "Scream from the stands. Paint your face with spirit. Race for the checkered flag.\nWe sponsor teams, schools and events that inspire you to GO GO GO.",
+      "sponsorLogos": [
+        {
+          "id": "1",
+          "name": "Regional Athletic Partners",
+          "logoUrl": "https://phillips66.widen.net/content/1xpc0vqsj3/png/PHICO_Sponsors_DT_1280x750_02%5B50%5D.png?crop=false&position=c&u=pqrmwb&w=1280&h=700"
+        }
+      ],
+      "bannerImageUrl": "/uploads/conoco-sponsors-trimmed.png"
+    }
+  },
+  "cards_rewards_cms": {
+    "hub": {
+      "hero": {
+        "title": "Cards & Rewards",
+        "subtitle": "Explore our suite of cards and rewards to make the most of every mile.",
+        "badgeText": "CARDS & REWARDSs",
+        "bgMediaUrl": "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=1920&q=80",
+        "bgMediaType": "image",
+        "overlayStyle": "gradient"
+      },
+      "intro": {
+        "body": "Whether you are an everyday driver looking to save at every fill-up, a family earning instant rewards, or a commercial fleet manager optimizing fuel costs and route efficiency, S&B Retail offers tailored payment and rewards solutions designed for modern mobility.",
+        "headline": "Fuel savings, premium rewards and seamless fleet management in your pocket."
+      },
+      "actionCards": [
+        {
+          "id": "credit-cards",
+          "to": "/credit-cards",
+          "tag": "Everyday Savings",
+          "theme": "green",
+          "title": "Credit Cards",
+          "imageUrl": "https://phillips66.widen.net/content/7pv15t7doa/png/new-cc-p66-card.png?position=c&color=ffffff00&quality=100&u=pqrmwb",
+          "subtitle": "Personal, Commercial & Fleet credit cards designed for every car and driver.",
+          "buttonText": "Explore Credit Cards"
+        },
+        {
+          "id": "kickback",
+          "to": "/kickback",
+          "tag": "Loyalty Points",
+          "theme": "slate",
+          "title": "KickBack® Rewards",
+          "imageUrl": "https://phillips66.widen.net/content/sebzu6tx2p/jpeg/kickback-hero-01.jpeg?position=c&color=ffffffff&quality=100&u=pqrmwb",
+          "subtitle": "Earn points on everyday fuel & store purchases, then spend them like cash at participating pumps.",
+          "buttonText": "Join KickBack®"
+        },
+        {
+          "id": "gift-cards",
+          "to": "/gift-cards",
+          "tag": "Flexible Values",
+          "theme": "white",
+          "title": "Gift Cards",
+          "imageUrl": "https://phillips66.widen.net/content/ka6jknjdl7/jpeg/SV2300164_Front%20%28002%29.jpeg?w=640&keep=c&crop=yes&color=cccccc&quality=80&u=u6q5cu",
+          "subtitle": "The perfect gift for family, friends, and coworkers. Denominations from $5 to $500.",
+          "buttonText": "Buy Gift Cards"
+        }
+      ]
+    },
+    "kickback": {
+      "hero": {
+        "headline": "Treat yourself and your car",
+        "subtitle": "With the KickBack® points card, You can earn points on typical purchases, then spend your points like cash at any of our participating locations.",
+        "bgMediaUrl": "https://phillips66.widen.net/content/sebzu6tx2p/jpeg/kickback-hero-01.jpeg?position=c&color=ffffffff&quality=100&u=pqrmwb",
+        "primaryCta": {
+          "link": "https://kickbackpoints.com/my-account/",
+          "label": "Register your card"
+        },
+        "bgMediaType": "image",
+        "secondaryCta": {
+          "link": "https://kickbackpoints.com/my-account/",
+          "label": "Manage account"
+        }
+      },
+      "cards": [
+        {
+          "id": "redeem-points",
+          "title": "Redeem points for gas and more",
+          "imageUrl": "https://phillips66.widen.net/content/thzariutom/jpeg/rewards-01.jpeg?keep=c&crop=yes&color=ffffffff&quality=54&u=mw5qdv",
+          "paragraphs": [
+            "Pick up a KickBack Points card for free at any participating S&B Retail station and earn points that spend like cash on gas and other items. You must be enrolled in the KickBack Points Program to redeem points and be eligible for prize giveaways."
+          ],
+          "imagePosition": "right"
+        },
+        {
+          "id": "participating-stations",
+          "title": "Participating stations",
+          "imageUrl": "https://phillips66.widen.net/content/6ewevuj4zc/jpeg/rewards-02.jpeg?keep=c&crop=yes&color=ffffffff&quality=54&u=mw5qdv",
+          "paragraphs": [
+            "KickBack Points is a fast-growing customer rewards program available at select S&B Retail stations. Each station gives out KickBack Points differently. Check your station’s KickBack Points offerings for more information. If your local station isn’t participating yet, why not encourage them to join?"
+          ],
+          "primaryCta": {
+            "link": "/contact",
+            "label": "Find stations"
+          },
+          "imagePosition": "left"
+        },
+        {
+          "id": "giveaways",
+          "title": "KickBack points giveaways",
+          "imageUrl": "https://phillips66.widen.net/content/tot1k8n2rb/jpeg/rewards-03.jpeg?keep=c&crop=yes&color=ffffffff&quality=54&u=mw5qdv",
+          "paragraphs": [
+            "All enrolled KickBack Points cardholders are automatically entered to win seasonal prize drawings. Each card swipe is an entry, so the more swipes, the more chances you have to win tickets to sporting events, trips and more prizes! For a list of current giveaways and official rules visit the KickBack Points website."
+          ],
+          "primaryCta": {
+            "link": "https://kickbackpoints.com/",
+            "label": "View giveaways"
+          },
+          "imagePosition": "right"
+        },
+        {
+          "id": "nationwide-support",
+          "title": "Nationwide support",
+          "imageUrl": "https://phillips66.widen.net/content/taytl2fxfd/jpeg/rewards-04.jpeg?keep=c&crop=yes&color=ffffffff&quality=54&u=mw5qdv",
+          "paragraphs": [
+            "Participating S&B Retail stations are a part of the KickBack Points coalition, which is expanding across the U.S. in a number of different retail locations including gas, grocery, and drug stores."
+          ],
+          "primaryCta": {
+            "link": "https://kickbackpoints.com/locations/",
+            "label": "Find participating retailers"
+          },
+          "imagePosition": "left"
+        }
+      ],
+      "howItWorks": {
+        "steps": [
+          {
+            "title": "Enroll",
+            "number": "01",
+            "description": "Pick up a FREE KickBack® Points card at participating locations or register for a digital card through the mobile app."
+          },
+          {
+            "title": "Earn",
+            "number": "02",
+            "description": "Earn KickBack® Points on eligible purchases at participating locations when you present your physical card or use the digital card within the app."
+          },
+          {
+            "title": "Redeem",
+            "number": "03",
+            "description": "KickBack® Points never expire. Spend your points like cash on our TOP TIER® fuel and convenience store items."
+          }
+        ],
+        "headline": "How it works"
+      },
+      "bottomBento": [
+        {
+          "title": "Manage Account",
+          "buttonLink": "https://kickbackpoints.com/my-account/",
+          "buttonText": "Login to your account",
+          "description": "Login to check your points balance or make changes to your account."
+        },
+        {
+          "email": "memberservices@kickbackpoints.com",
+          "phone": "1-888-339-7064",
+          "title": "Support",
+          "description": "Do you have any questions about your KickBack Points card? Contact us."
+        }
+      ]
+    },
+    "giftCards": {
+      "hero": {
+        "body": "S&B Retail gift cards make a perfect gift for your friends, family, and their cars. Available in denominations you set between $5 and $500, S&B Retail gift cards can be used to buy snacks at our convenience stores and quality fuel at any S&B pumps. Your friends, coworkers, clients and their cars will thank you for it.",
+        "headline": "Gift Cards",
+        "imageUrl": "https://phillips66.widen.net/content/ka6jknjdl7/jpeg/SV2300164_Front%20%28002%29.jpeg?w=640&keep=c&crop=yes&color=cccccc&quality=80&u=u6q5cu",
+        "termsCta": {
+          "link": "https://mycardterms.com/phillips66/",
+          "label": "Terms and conditions"
+        },
+        "primaryCta": {
+          "link": "https://phillips66.ourgiftcards.com/",
+          "label": "Buy now"
+        },
+        "checkBalanceCta": {
+          "link": "https://wbiprod.storedvalue.com/wbir/clients/phillips66enhanced",
+          "label": "Check your balance"
+        }
+      },
+      "features": [
+        {
+          "title": "Custom Denominations",
+          "number": "01",
+          "description": "Choose any exact value from $5 to $500. Ideal for holiday gifts, team incentives, road trip gas money, and coffee snacks."
+        },
+        {
+          "title": "Zero Fees & No Expiration",
+          "number": "02",
+          "description": "Funds never expire, with zero maintenance or dormancy fees. Your full card value stays intact until every penny is enjoyed."
+        },
+        {
+          "title": "Accepted at Pumps & C-Stores",
+          "number": "03",
+          "description": "Redeemable for both TOP TIER™ certified fuels at the dispenser and inside our convenience stores for fresh food, beverages, and auto supplies."
+        }
+      ]
+    },
+    "creditCards": {
+      "hero": {
+        "headline": "There’s a card for every car (and driver).",
+        "subtitle": "Unlock rewards with S&B Retail fuel credit cards—compare options and apply today to start earning on every fill-up!",
+        "bgMediaUrl": "https://phillips66.widen.net/content/1ppdmpdyf8/jpeg/Hero%20Credit%20Card.jpeg?position=c&color=ffffffff&quality=100&u=pqrmwb",
+        "bgMediaType": "image"
+      },
+      "cards": [
+        {
+          "id": "personal-card",
+          "title": "Boost your Rewards with the S&B Retail Credit Card",
+          "imageUrl": "https://phillips66.widen.net/content/7pv15t7doa/png/new-cc-p66-card.png?position=c&color=ffffff00&quality=100&u=pqrmwb",
+          "paragraphs": [
+            "As a Cardholder you will now be able earn 3¢ on every fuel purchase when you swipe your card to pay or save 5¢ per gallon in Rewards when you pay with your S&B Retail Credit Card through the mobile app. Plus, stack your Rewards with featured seasonal mobile app offers.",
+            "Make Car Care Extra Rewarding! Use your card at over 1 million auto merchant locations nationwide including parts, repair, services and more. 6 Months Promotional Financing is available on purchases of $199 or more. Plus, EMV chip for enhanced security transactions and peace of mind."
+          ],
+          "primaryCta": {
+            "link": "https://apply.syf.com/eapply/eapply.action?clientCode=PHILLIPS66",
+            "label": "Apply now"
+          },
+          "secondaryCta": {
+            "link": "https://www.mysynchrony.com/cmp-index.html?market=automotive&store=phillips_66_credit_card_rewards_program",
+            "label": "Manage account"
+          },
+          "imagePosition": "right"
+        },
+        {
+          "id": "commercial-card",
+          "title": "Meet the new S&B Retail Commercial Credit Card",
+          "imageUrl": "https://phillips66.widen.net/content/mqt2hblsrk/png/P66-Commercial-Card-Old-Design.png?position=c&color=ffffff00&quality=100&u=pqrmwb",
+          "paragraphs": [
+            "Designed to help steer your business in the right direction, the new S&B Retail Commercial Credit Card is packed with business-friendly benefits. Enjoy pay-at-the-pump convenience at thousands of stations nationwide, detailed monthly statements and online account management."
+          ],
+          "primaryCta": {
+            "link": "https://businessapply.syf.com/cmlapply/ca/p66brc/business-info",
+            "label": "Apply now"
+          },
+          "secondaryCta": {
+            "link": "https://www.mysynchrony.com/cmp-index.html?market=automotive&store=phillips_66_credit_card_rewards_program",
+            "label": "Manage account"
+          },
+          "imagePosition": "left"
+        },
+        {
+          "id": "fleet-card",
+          "title": "S&B Retail Fleet Card",
+          "imageUrl": "https://phillips66.widen.net/content/gd1kuxv6k5/png/PC71_PSX_PL-%281%29.png?position=c&color=ffffff00&quality=100&u=pqrmwb",
+          "paragraphs": [
+            "No matter how many vehicles you have to fill up, the S&B Retail Fleet Card is there to make it easier. With volume rebates up to 7¢ per gallon, this card program has robust reporting, online account management and tax-exemption capabilities. To apply, please call 1-877-685-0330 or click the button below."
+          ],
+          "primaryCta": {
+            "link": "https://www.phillips66fleet.com/",
+            "label": "Apply now"
+          },
+          "secondaryCta": {
+            "link": "https://p66.wexonline.com/login",
+            "label": "Manage account"
+          },
+          "imagePosition": "right"
+        },
+        {
+          "id": "universal-card",
+          "title": "S&B Retail Universal Card",
+          "imageUrl": "https://phillips66.widen.net/content/m6n9nqkhgq/png/PC7U_PSX_U-%283%29.png?position=c&color=ffffff00&quality=100&u=pqrmwb",
+          "paragraphs": [
+            "We know you can’t always fill up at an S&B Retail station. That’s why we’ve created the S&B Retail Universal Card, accepted at 95% of U.S. retail fuel locations and 45,000 service locations nationwide – anywhere WEX® is accepted. To apply, please call 1-877-685-0330 or click the button below."
+          ],
+          "primaryCta": {
+            "link": "https://www.phillips66fleet.com/",
+            "label": "Apply now"
+          },
+          "secondaryCta": {
+            "link": "https://p66.wexonline.com/login",
+            "label": "Manage account"
+          },
+          "imagePosition": "left"
+        }
+      ]
+    },
+    "navDropdown": {
+      "links": [
+        {
+          "to": "/credit-cards",
+          "label": "Credit Cards"
+        },
+        {
+          "to": "/kickback",
+          "label": "KickBack® Rewards"
+        },
+        {
+          "to": "/gift-cards",
+          "label": "Gift Cards"
+        }
+      ],
+      "title": "Cards & Rewards",
+      "badgeText": "Cards & Rewards",
+      "cardImage": "https://phillips66.widen.net/content/c5qqgh5vil/jpeg/BrandedFuelCardPrograms_CommercialCreditCard.jpeg?position=c&color=ffffffff&quality=100&u=pqrmwb",
+      "description": "Explore our suite of cards and rewards to make the most of every mile."
+    }
+  },
+  "our_products_cms": "{\"hub\":{\"hero\":{\"bgMediaUrl\":\"https://images.unsplash.com/photo-1578916171728-46686eac8d58?auto=format&fit=crop&w=1920&q=80\",\"bgMediaType\":\"image\",\"badgeText\":\"OUR PRODUCTS\",\"title\":\"Our Products\",\"subtitle\":\"\",\"overlayStyle\":\"warm\"},\"intro\":{\"headline\":\"We carry beverages fit for energizing, satisfying, warming up, cooling down or just plain quenching your thirst\",\"body\":\"We’ve got your food solutions, too - whether it’s for on-the-go, at work or anywhere in-between… treat time, lunch time, anytime! We’ll supply the everyday necessities for your fridge, your family, your first aid kit or your traveling tool box. Fuel up, oil up and tidy up your car. One stop at S&B Forecourt and you’re ready to take on your day. No matter why you’re stopping or who you’re with, just come as you are…we’ll be here ready and waiting for you!\"},\"actionCards\":[{\"id\":\"card-thirst-stop\",\"title\":\"America's\\nTHIRST STOP!\",\"subtitle\":\"Ice-cold fountain drinks, fresh barista coffee, froster slushies and ready-to-grab cold teas and juices.\",\"imageUrl\":\"https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80\",\"cardTheme\":\"blue\",\"linkUrl\":\"/our-products/americas-thirst-stop\",\"buttonText\":\"More info →\",\"badge\":\"Drinks & Beverages\",\"showDash\":true},{\"id\":\"card-fresh-food\",\"title\":\"Fresh food,\\nfast!\",\"subtitle\":\"We’re the hot spot for tasty snacks and meals on the move. From hot dogs, artisan pizza, to sandwiches and salads, we’ve got your hunger covered.\",\"imageUrl\":\"https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80\",\"cardTheme\":\"green\",\"linkUrl\":\"/our-products/meal-deals\",\"buttonText\":\"More info →\",\"badge\":\"Hot Foods & Combos\",\"showDash\":true},{\"id\":\"card-easy-pay\",\"title\":\"Easy Pay\",\"subtitle\":\"Easy to Save, Easy to Pay, Every Day, on Every Gallon! Link your S&B Easy Pay card to your checking account for the most secure, convenient way to fuel up and save up to 30¢/gal.\",\"imageUrl\":\"https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=800&q=80\",\"cardTheme\":\"white\",\"linkUrl\":\"/our-products/easy-pay\",\"buttonText\":\"Read more →\",\"badge\":\"Save 30¢/gal\",\"showDash\":true},{\"id\":\"card-fleet\",\"title\":\"Fleet Card\",\"subtitle\":\"Empower your commercial fleet with centralized fuel management, driver PIN security, monthly consolidated invoicing and tiered volume savings.\",\"imageUrl\":\"https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=800&q=80\",\"cardTheme\":\"white\",\"linkUrl\":\"/our-products/business\",\"buttonText\":\"More info →\",\"badge\":\"B2B Solutions\",\"showDash\":true},{\"id\":\"card-quality-guaranteed\",\"title\":\"Quality\\nguaranteed\",\"subtitle\":\"When we say quality guaranteed fuel, we mean it. Top Tier™ detergent gasoline that cleans intake valves, protects engines, and enhances every mile.\",\"imageUrl\":\"https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=800&q=80\",\"cardTheme\":\"slate\",\"linkUrl\":\"/our-products/qualityguaranteed\",\"buttonText\":\"More info →\",\"badge\":\"Top Tier™ Fuel\",\"showDash\":true}]},\"subpages\":{\"thirstStop\":{\"hero\":{\"title\":\"WE DEFINITELY HAVE THAT\",\"subtitle\":\"Thirsty? Chill out with an icy Polar Pop, grab an energy drink, or pour a steaming hot cup of bean-to-cup Arabica coffee.\",\"bgMediaUrl\":\"https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=1200&q=80\",\"buttonText\":\"Find your nearest station\",\"buttonLink\":\"/contact\"},\"locator\":{\"title\":\"Find your nearest store\",\"placeholder\":\"City & State or ZIP\",\"buttonLink\":\"/contact\"},\"featuredProducts\":[{\"id\":\"fp-1\",\"name\":\"NEW GHOST® Energy Strawbango\",\"badge\":\"NEW\",\"description\":\"Legendary energy and epic flavor with zero sugar and natural caffeine.\",\"imageUrl\":\"https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=600&q=80\"},{\"id\":\"fp-2\",\"name\":\"NEW CELSIUS® Watermelon Ice\",\"badge\":\"REFRESHING\",\"description\":\"Essential energy formula packed with 7 essential vitamins and zero sugar.\",\"imageUrl\":\"https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=600&q=80\"},{\"id\":\"fp-3\",\"name\":\"Sprite Cherry Polar Pop\",\"badge\":\"CUSTOMER FAVORITE\",\"description\":\"Ice-cold crisp Sprite with a burst of sweet cherry served in our 44oz cup.\",\"imageUrl\":\"https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=600&q=80\"},{\"id\":\"fp-4\",\"name\":\"NEW EXCLUSIVE Gatorade® Summer Blaze\",\"badge\":\"EXCLUSIVE\",\"description\":\"Quench your deep thirst with rapid electrolyte hydration and bold fruit flavor.\",\"imageUrl\":\"https://images.unsplash.com/photo-1543253687-c931c8e01820?auto=format&fit=crop&w=600&q=80\"},{\"id\":\"fp-5\",\"name\":\"MTN DEW® Summer Sparkler\",\"badge\":\"SUMMER HIT\",\"description\":\"Citrus blast soda chilled to perfection at our self-serve beverage center.\",\"imageUrl\":\"https://images.unsplash.com/photo-1527661591475-527312dd65f5?auto=format&fit=crop&w=600&q=80\"},{\"id\":\"fp-6\",\"name\":\"Monster Energy Ultra Sunrise\",\"badge\":\"ZERO SUGAR\",\"description\":\"Light, crisp citrus orange flavor with full load of Monster energy blend.\",\"imageUrl\":\"https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=600&q=80\"}],\"limitedTimeOffers\":[{\"id\":\"lto-1\",\"title\":\"S'mores Coffee\",\"description\":\"Rich dark roast infused with sweet marshmallow, toasted graham, and melted milk chocolate.\",\"imageUrl\":\"https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=600&q=80\"},{\"id\":\"lto-2\",\"title\":\"S'mores Hot Chocolate\",\"description\":\"Decadent creamy cocoa topped with campfire marshmallow notes and crunchy graham crumb topping.\",\"imageUrl\":\"https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?auto=format&fit=crop&w=600&q=80\"},{\"id\":\"lto-3\",\"title\":\"Win Free Coffee For A Year\",\"description\":\"Scan your S&B Rewards barcode every time you brew in-store for automatic entries into our grand giveaway!\",\"imageUrl\":\"https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80\"}],\"everydayClassics\":[{\"id\":\"ec-1\",\"title\":\"Award Winning Coffee\",\"description\":\"100% Arabica beans freshly ground for each individual cup. Unmatched freshness in every sip.\",\"imageUrl\":\"https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80\"},{\"id\":\"ec-2\",\"title\":\"100% Colombian Roast\",\"description\":\"Dark roasted Colombian beans create a full-bodied cup with caramel brown sugar notes and pleasant mocha finish.\",\"imageUrl\":\"https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=600&q=80\"},{\"id\":\"ec-3\",\"title\":\"Signature House Blend\",\"description\":\"Rich tasting and full-bodied, offering a harmonious balance of caramelized sweetness and chocolate aroma.\",\"imageUrl\":\"https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&q=80\"}],\"disclaimer\":\"* Available at participating S&B Forecourt & C-Store locations across the United States.\"},\"mealDeals\":{\"hero\":{\"title\":\"MEAL DEALS\",\"subtitle\":\"Hungry? Choose Your Deal! Satisfying, high-value combos made fresh daily for drivers on the go.\",\"bgMediaUrl\":\"https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1200&q=80\",\"buttonText\":\"Find your local store\",\"buttonLink\":\"/contact\"},\"dealTiers\":[{\"id\":\"tier-3-lunch\",\"title\":\"$3 Meal Deal\",\"description\":\"Includes a hot dog OR a taquito, 1oz-2oz bag of Frito-Lay chips, and any size Polar Pop (up to 44oz)\",\"items\":[{\"id\":\"tier1-item-1\",\"name\":\"Grilled All-Beef Hot Dog\",\"imageUrl\":\"https://images.unsplash.com/photo-1619740455993-9e612b1af08a?auto=format&fit=crop&w=600&q=80\"},{\"id\":\"tier1-item-2\",\"name\":\"Crispy Artisan Taquito\",\"imageUrl\":\"https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=600&q=80\"},{\"id\":\"tier1-item-3\",\"name\":\"Frito-Lay Chips (1-2oz)\",\"imageUrl\":\"https://images.unsplash.com/photo-1566478989037-eec170784d0b?auto=format&fit=crop&w=600&q=80\"},{\"id\":\"tier1-item-4\",\"name\":\"Any Size Polar Pop (up to 44oz)\",\"imageUrl\":\"https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=600&q=80\"}]},{\"id\":\"tier-3-bakery\",\"title\":\"$3 Morning Meal Deal\",\"description\":\"Choose any 1 donut, pastry, brownie, muffin OR any cookie and any size Polar Pop (up to 44oz) OR a medium coffee\",\"items\":[{\"id\":\"tier2-item-1\",\"name\":\"Donut, Pastry, Brownie, Muffin, or Cookie\",\"imageUrl\":\"https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=600&q=80\"},{\"id\":\"tier2-item-2\",\"name\":\"Medium Fresh Arabica Coffee\",\"imageUrl\":\"https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=600&q=80\"},{\"id\":\"tier2-item-3\",\"name\":\"Any Size Polar Pop (up to 44oz)\",\"imageUrl\":\"https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=600&q=80\"}]},{\"id\":\"tier-4-breakfast\",\"title\":\"$4 Meal Deal\",\"description\":\"Choose from any of the following hot breakfast sandwiches. Add a hash brown and any energy drink (Monster, Red Bull, Celsius) OR a medium coffee OR any size Polar Pop (up to 44oz).\",\"items\":[{\"id\":\"tier3-item-1\",\"name\":\"Sausage, Egg, & Cheese Croissant\",\"imageUrl\":\"https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=600&q=80\"},{\"id\":\"tier3-item-2\",\"name\":\"Sausage, Egg, & Cheese Biscuit\",\"imageUrl\":\"https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80\"},{\"id\":\"tier3-item-3\",\"name\":\"Sausage, Egg, & Cheese English Muffin\",\"imageUrl\":\"https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80\"},{\"id\":\"tier3-item-4\",\"name\":\"Ham, Egg, & Cheese Croissant\",\"imageUrl\":\"https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=600&q=80\"},{\"id\":\"tier3-item-5\",\"name\":\"Crispy Golden Hash Brown\",\"imageUrl\":\"https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=600&q=80\"},{\"id\":\"tier3-item-6\",\"name\":\"Monster, Red Bull & Celsius Drinks\",\"imageUrl\":\"https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=600&q=80\"},{\"id\":\"tier3-item-7\",\"name\":\"Medium Fresh Arabica Coffee\",\"imageUrl\":\"https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=600&q=80\"},{\"id\":\"tier3-item-8\",\"name\":\"Any Size Polar Pop (up to 44oz)\",\"imageUrl\":\"https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=600&q=80\"}]},{\"id\":\"tier-5-combo\",\"title\":\"$5 Meal Deal\",\"description\":\"Includes an S&B Chargrilled Cheeseburger OR Chicken and Swiss, 1-2oz Frito-Lay chips, 20oz soda OR a Polar Pop (up to 44oz)\",\"items\":[{\"id\":\"tier4-item-1\",\"name\":\"Chargrilled Cheese Burger\",\"imageUrl\":\"https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80\"},{\"id\":\"tier4-item-2\",\"name\":\"Chicken and Swiss Sandwich\",\"imageUrl\":\"https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=600&q=80\"},{\"id\":\"tier4-item-3\",\"name\":\"Frito-Lay Chips (1-2oz)\",\"imageUrl\":\"https://images.unsplash.com/photo-1566478989037-eec170784d0b?auto=format&fit=crop&w=600&q=80\"},{\"id\":\"tier4-item-4\",\"name\":\"Any 20oz Soda Bottle\",\"imageUrl\":\"https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=600&q=80\"},{\"id\":\"tier4-item-5\",\"name\":\"Any Size Polar Pop (up to 44oz)\",\"imageUrl\":\"https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=600&q=80\"}]}],\"disclaimer\":\"* Prices and participation may vary by location. Applicable taxes not included. Available at participating S&B stores.\"},\"easyPay\":{\"hero\":{\"title\":\"Easy Pay: Your Gas Card Alternative for Everyday Savings\",\"subtitle\":\"Sign up now to save 30¢ per gallon on your first 100 gallons or 60 days, then save at least 10¢ per gallon every single day!\",\"bgMediaUrl\":\"https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=1200&q=80\",\"buttonText\":\"Enroll now\",\"buttonLink\":\"/contact\"},\"whatIs\":{\"title\":\"What is Easy Pay Debit?\",\"cardVisualUrl\":\"https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=800&q=80\",\"points\":[{\"heading\":\"A Simple Way to Pay at S&B\",\"description\":\"Experience seamless transactions with Easy Pay, linking directly to your checking account for debit card-like convenience with no credit checks.\"},{\"heading\":\"Minimum 10¢ off per gallon\",\"description\":\"Watch the savings roll in every time you swipe. After saving 30¢/gal in your first 60 days or 100 gallons, enjoy at least 10¢ off every gallon, every day.\"},{\"heading\":\"Secure Easy Pay with PIN\",\"description\":\"Each Easy Pay transaction is protected by your personal unique 4-digit PIN, ensuring complete peace of mind whenever you fuel up.\"}],\"memberBox\":{\"title\":\"Already an Easy Pay member?\",\"description\":\"Looking to log in to your account, check transaction history, or order replacement cards? Access the secure member portal.\",\"buttonText\":\"Log In to Account\",\"buttonLink\":\"/contact\"}},\"steps\":[{\"stepNumber\":\"Step 1\",\"title\":\"Get your Easy Pay Card\",\"description\":\"Pick up an Easy Pay card at your local S&B Forecourt cashier counter. Not near a store? Request one during online enrollment and we’ll mail it to your home address!\",\"imageUrl\":\"https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=800&q=80\",\"ctaText\":\"Enroll now\",\"ctaLink\":\"/contact\"},{\"stepNumber\":\"Step 2\",\"title\":\"Link the card to your checking account\",\"description\":\"Your Easy Pay card functions as a decoupled debit card. Following quick identity verification, securely connect your bank routing and account number.\",\"imageUrl\":\"https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80\",\"ctaText\":\"\",\"ctaLink\":\"\"},{\"stepNumber\":\"Step 3\",\"title\":\"Receive and activate cards\",\"description\":\"Visit any local store to activate your new Easy Pay card and save an introductory 30¢ per gallon on your first 60 days or 100 gallons. Enter your PIN to start saving!\",\"imageUrl\":\"https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=800&q=80\",\"ctaText\":\"\",\"ctaLink\":\"\"}],\"faqs\":[{\"category\":\"General\",\"question\":\"How does Easy Pay work?\",\"answer\":\"Easy Pay is an ACH debit card linked securely to your existing checking account. Funds are deducted directly from your bank like a check or debit card. No line of credit is opened, no credit checks are required, and your credit score is completely unaffected.\"},{\"category\":\"General\",\"question\":\"What is Easy Pay?\",\"answer\":\"Easy Pay is a proprietary debit card for S&B Forecourt customers. It gives you automatic fuel rollbacks and instant in-store savings without credit card interest fees.\"},{\"category\":\"General\",\"question\":\"What are the benefits of Easy Pay?\",\"answer\":\"You save 30¢ per gallon during your introductory period (up to 100 gallons or 60 days), and a guaranteed minimum of 10¢ off every gallon thereafter, every day.\"},{\"category\":\"Enrollment\",\"question\":\"What do I need to enroll in Easy Pay?\",\"answer\":\"You need a valid US checking account and a valid Driver’s License or State ID. You can pick up a physical card in-store or request one by mail during enrollment.\"},{\"category\":\"Enrollment\",\"question\":\"How long will it take for an Easy Pay card to arrive by mail?\",\"answer\":\"Mailed cards typically arrive within 7–10 business days. Picking up a free card in-store is the fastest way to start saving immediately.\"},{\"category\":\"Security\",\"question\":\"Is my bank information safe with Easy Pay?\",\"answer\":\"Yes. All banking connections use bank-grade 256-bit encryption. Your card is secured with a unique 4-digit PIN that must be entered at every pump transaction.\"},{\"category\":\"Security\",\"question\":\"Do you run a credit check?\",\"answer\":\"No. We never perform credit checks or inquire with credit bureaus.\"}]},\"businessFleet\":{\"hero\":{\"title\":\"A smarter way to fuel your fleet. Savings start at 10¢*\",\"subtitle\":\"With S&B Pro fleet cards and digital fleet solutions, you can cut fuel costs, simplify fleet expense management and prevent driver fraud.\",\"bgMediaUrl\":\"https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1200&q=80\",\"buttonText\":\"Get your personal quote\",\"buttonLink\":\"/contact\",\"secondaryButtonText\":\"Apply for Fleet Card\",\"secondaryButtonLink\":\"/contact\"},\"offerRibbon\":\"Enroll your fleet today and save 10¢ per gallon for 6 months* – Take advantage of this limited time offer.\",\"optimizationFeatures\":[{\"id\":\"opt-1\",\"title\":\"Drive more. Pay less.\",\"description\":\"Save up to $40 a month per vehicle with tiered volume fuel rebates.\",\"iconName\":\"DollarSign\"},{\"id\":\"opt-2\",\"title\":\"We've got your back, 24/7\",\"description\":\"24/7 US-based commercial support and roadside assistance at your service.\",\"iconName\":\"Headphones\"},{\"id\":\"opt-3\",\"title\":\"Fuel anywhere\",\"description\":\"Fill up at thousands of S&B Forecourts and partner locations nationwide.\",\"iconName\":\"MapPin\"}],\"fleetSolutions\":[{\"id\":\"sol-1\",\"leadingTag\":\"For exclusive fueling\",\"title\":\"Fleet Card\",\"priceText\":\"No monthly card fees\",\"benefits\":[\"Save +10¢ per gallon*\",\"All S&B Forecourt fuel stations\",\"Physical tamper-resistant card\",\"Fuel & Car Wash authorized\",\"Fleet spend analytics & odometer tracking\"],\"imageUrl\":\"https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=600&q=80\",\"applyLink\":\"/contact\",\"learnMoreLink\":\"/contact\"},{\"id\":\"sol-2\",\"leadingTag\":\"For maximized fueling options\",\"title\":\"Universal Card\",\"priceText\":\"Low monthly card fee\",\"benefits\":[\"Save +10¢ per gallon at S&B stations*\",\"Accepted at 95% of fuel retailers nationwide\",\"Physical magnetic & chip card\",\"Fuel, Car Wash, and service maintenance\",\"Consolidated multi-network reporting\"],\"imageUrl\":\"https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=600&q=80\",\"applyLink\":\"/contact\",\"learnMoreLink\":\"/contact\"},{\"id\":\"sol-3\",\"leadingTag\":\"If you want to go fully digital\",\"title\":\"Digital+\",\"priceText\":\"Monthly subscription charge\",\"benefits\":[\"Save +10¢ per gallon*\",\"Runs on contactless digital acceptance\",\"Pay directly from the mobile app\",\"Fuel, Tolls, EV and Car Wash\",\"Instant driver onboarding in seconds\"],\"imageUrl\":\"https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=600&q=80\",\"applyLink\":\"/contact\",\"learnMoreLink\":\"/contact\"}],\"supportBanner\":{\"title\":\"Still not sure which product is best for you?\",\"description\":\"S&B Pro has a dedicated network of commercial fueling experts ready to analyze your fleet mileage and configure the best savings plan.\",\"buttonText\":\"Fill contact form\",\"buttonLink\":\"/contact\",\"imageUrl\":\"https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80\"},\"faqs\":[{\"question\":\"How can I find S&B locations near me for my fleet?\",\"answer\":\"Use our interactive Store Locator or fleet manager app to view all diesel high-flow dispensers, DEF at pump, and commercial fueling lanes.\"},{\"question\":\"How do driver PINs prevent fraud?\",\"answer\":\"Every driver is assigned a unique PIN and prompted for odometer readings at the pump. Cards can be locked to fuel-only and restricted to specific vehicle tank capacities.\"},{\"question\":\"How does tax-exempt reporting work?\",\"answer\":\"If your organization is tax-exempt (non-profit, municipality, educational), our portal automatically credits state and federal excise taxes on every monthly statement.\"},{\"question\":\"What are the volume rebates?\",\"answer\":\"Rebates scale up to 8¢/gal based on monthly gallons consumed across your fleet, applied as a statement credit automatically.\"}]},\"qualityGuaranteed\":{\"hero\":{\"title\":\"Best-in-class fuel services\",\"subtitle\":\"Top Tier™ certified gasoline that cleans intake valves, protects your engine against deposit buildup, and maximizes fuel economy.\",\"bgMediaUrl\":\"https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=1200&q=80\",\"buttonText\":\"Find your local station\",\"buttonLink\":\"/contact\"},\"locator\":{\"title\":\"Find your local S&B station here\",\"placeholder\":\"City & State or ZIP\",\"buttonLink\":\"/contact\"},\"commitment\":{\"title\":\"Quality Guaranteed\",\"p1\":\"We guarantee our fuel is of high grade quality that meets and exceeds all EPA standards. We are committed to best-in-class fuel services and provide an easy fueling experience for our customers. We only use fuel sourced from responsible refineries and terminals that use 3x detergent additives. This means lower vehicle emissions and maintenance of optimal engine performance.\",\"p2\":\"When we say quality guaranteed, we mean it. We strive to deliver a quality customer experience every time. That’s why if you do run into an issue with our fuel, we guarantee to work with you to fix the issue and have you back on the road as quickly as possible.\"},\"showcaseImage1\":\"https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1200&q=80\",\"problemSteps\":{\"heading\":\"If you do experience a problem with our S&B fuel, please follow these easy steps:\",\"steps\":[\"Call our 1-800-555-SANDB customer service line within 2 days of the fueling incident.\",\"Our team will provide information regarding required support documentation (receipt and technician inspection).\",\"When satisfactory support documentation is provided, we will work with you on full reimbursement of necessary repairs attributable to our fuel.*\"],\"disclaimer\":\"* S&B Retail investigates all claims and reserves the right to reject any claim not supported by appropriate verified documentation.\",\"supportTitle\":\"Customer Care Line\",\"supportPhone\":\"1-800-555-SANDB (1-800-555-7263)\"},\"showcaseImage2\":\"https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=1200&q=80\",\"faqs\":[{\"question\":\"Why should I choose S&B fuels?\",\"answer\":\"When we say quality guaranteed, we mean it. Our fuel contains 3x more cleaning detergent than standard minimum requirements, keeping fuel injectors clean, lowering emissions, and enhancing engine longevity.\"},{\"question\":\"What if I have a problem with S&B fuel?\",\"answer\":\"We stand behind our fuel 100%. Call our 24/7 customer care line within 2 days at 1-800-555-SANDB, submit simple verification documents, and we will reimburse qualifying repair costs.\"},{\"question\":\"Does S&B fuel meet EPA and Top Tier standards?\",\"answer\":\"Yes. All S&B unleaded and premium blends meet strict Top Tier™ detergent gasoline specifications, certified to prevent carbon deposit accumulation in modern gasoline direct-injection (GDI) engines.\"},{\"question\":\"Do you filter fuel at the dispenser?\",\"answer\":\"Every dispensing bay is equipped with dual-stage 10-micron water-blocking filters to ensure that only clean, sediment-free fuel enters your fuel tank.\"}]}}}"
+}

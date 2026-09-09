@@ -1,11 +1,12 @@
 const asyncHandler = require('express-async-handler');
 const prisma = require('../config/db');
+const defaultSettings = require('../constants/defaultSettings');
 
 // GET /api/settings (Public - returns all CMS settings grouped by key)
 const getAllSettings = asyncHandler(async (req, res) => {
   res.set('Cache-Control', 'no-store, no-cache, must-revalidate, private');
   const records = await prisma.siteSetting.findMany();
-  const settings = {};
+  const settings = { ...defaultSettings };
   records.forEach((rec) => {
     settings[rec.key] = rec.value;
   });
@@ -16,7 +17,17 @@ const getAllSettings = asyncHandler(async (req, res) => {
 const getSettingByKey = asyncHandler(async (req, res) => {
   res.set('Cache-Control', 'no-store, no-cache, must-revalidate, private');
   const { key } = req.params;
-  const record = await prisma.siteSetting.findUnique({ where: { key } });
+  let record = await prisma.siteSetting.findUnique({ where: { key } });
+
+  // If setting is missing in the database but exists in defaults, safely initialize it
+  if (!record && defaultSettings[key]) {
+    record = await prisma.siteSetting.upsert({
+      where: { key },
+      create: { key, value: defaultSettings[key] },
+      update: {}, // Non-destructive: do not overwrite if created concurrently
+    });
+  }
+
   if (!record) {
     return res.status(404).json({ message: `Setting '${key}' not found` });
   }
