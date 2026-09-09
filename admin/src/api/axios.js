@@ -21,9 +21,20 @@ export const ADMIN_URL =
     : 'http://localhost:5174');
 
 export const getAssetUrl = (path) => {
-  if (!path) return '';
-  if (path.startsWith('http://') || path.startsWith('https://')) return path;
-  return `${API_ORIGIN}${path.startsWith('/') ? '' : '/'}${path}`;
+  if (!path || path === 'none') return '';
+  if (typeof path !== 'string' || path.trim() === '') return '';
+  const cleanPath = path.trim();
+  if (cleanPath.startsWith('data:') || cleanPath.startsWith('blob:')) return cleanPath;
+  if (import.meta.env.PROD && (cleanPath.startsWith('http://localhost') || cleanPath.startsWith('http://127.0.0.1'))) {
+    try {
+      const parsed = new URL(cleanPath);
+      return `${API_ORIGIN}${parsed.pathname}${parsed.search}`;
+    } catch {
+      // fallback
+    }
+  }
+  if (cleanPath.startsWith('http://') || cleanPath.startsWith('https://')) return cleanPath;
+  return `${API_ORIGIN}${cleanPath.startsWith('/') ? '' : '/'}${cleanPath}`;
 };
 
 const api = axios.create({

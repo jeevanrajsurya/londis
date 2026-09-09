@@ -1221,7 +1221,7 @@ export default function HomePageCmsTab() {
                 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
                   <div className="w-24 h-24 bg-slate-900 rounded-lg overflow-hidden border border-slate-300 flex items-center justify-center shrink-0 relative">
                     <img
-                      src="/uploads/Cropped-phone.jpg"
+                      src={getAssetUrl('/uploads/Cropped-phone.jpg')}
                       alt="Phone Mockup"
                       className="w-full h-full object-cover object-top opacity-80"
                     />

@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Sparkles } from 'lucide-react';
 import { getOurProductsPageSettings } from '../api/client';
 import { fallbackOurProductsCms } from '../data/ourProductsData';
+import { resolveImageUrl } from '../utils/imageHelper';
 
 export default function OurProducts() {
   const { data: cmsData } = useQuery({
@@ -31,7 +32,7 @@ export default function OurProducts() {
             {hero.bgMediaType === 'video' ||
             /\.(mp4|webm|mov|m4v|ogg)(\?.*)?$/i.test(hero.bgMediaUrl) ? (
               <video
-                src={hero.bgMediaUrl.trim()}
+                src={resolveImageUrl(hero.bgMediaUrl.trim())}
                 autoPlay
                 loop
                 muted
@@ -40,7 +41,7 @@ export default function OurProducts() {
               />
             ) : (
               <img
-                src={hero.bgMediaUrl.trim()}
+                src={resolveImageUrl(hero.bgMediaUrl.trim())}
                 alt={hero.title || 'Our Products'}
                 className="absolute inset-0 w-full h-full object-cover z-0"
               />
@@ -154,7 +155,7 @@ export default function OurProducts() {
                   {Boolean(card.imageUrl && card.imageUrl.trim()) && (
                     <div className="relative z-0 my-4 h-48 sm:h-56 w-full flex items-center justify-center overflow-hidden rounded-2xl">
                       <img
-                        src={card.imageUrl.trim()}
+                        src={resolveImageUrl(card.imageUrl.trim())}
                         alt={card.title}
                         className="w-full h-full object-cover rounded-2xl transition-transform duration-700 group-hover:scale-106"
                         loading="lazy"

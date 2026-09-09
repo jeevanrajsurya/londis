@@ -5,6 +5,7 @@ import { CheckCircle2, Loader2 } from 'lucide-react';
 import toast from 'react-hot-toast';
 import { getContactPageSettings, submitInquiry } from '../api/client';
 import { fallbackSettings } from '../data/forecourtData';
+import { resolveImageUrl } from '../utils/imageHelper';
 
 export default function Contact() {
   const [loading, setLoading] = useState(false);
@@ -93,7 +94,7 @@ export default function Contact() {
           <>
             {(cms.hero?.bgMediaType === 'video' || /\.(mp4|webm|mov|m4v|ogg)(\?.*)?$/i.test(cms.hero.bgMediaUrl)) ? (
               <video
-                src={cms.hero.bgMediaUrl.trim()}
+                src={resolveImageUrl(cms.hero.bgMediaUrl.trim())}
                 autoPlay
                 loop
                 muted
@@ -102,7 +103,7 @@ export default function Contact() {
               />
             ) : (
               <img
-                src={cms.hero.bgMediaUrl.trim()}
+                src={resolveImageUrl(cms.hero.bgMediaUrl.trim())}
                 alt={cms.hero?.title || 'Contact Us Hero'}
                 className="absolute inset-0 w-full h-full object-cover z-0"
               />
@@ -427,7 +428,7 @@ export default function Contact() {
                 {Boolean(card.imageUrl && card.imageUrl.trim()) && (
                   <div className="relative w-full rounded-[16px] overflow-hidden mb-8 lg:mb-10 bg-[#e0e0e0] pb-[72.28%] shrink-0">
                     <img
-                      src={card.imageUrl}
+                      src={resolveImageUrl(card.imageUrl)}
                       alt={card.title || 'Feature card'}
                       className="absolute inset-0 w-full h-full object-cover"
                       loading="lazy"

@@ -10,6 +10,7 @@ import {
 } from 'lucide-react';
 import { getOurProductsPageSettings } from '../../api/client';
 import { fallbackOurProductsCms } from '../../data/ourProductsData';
+import { resolveImageUrl } from '../../utils/imageHelper';
 
 export default function QualityGuaranteedPage() {
   const navigate = useNavigate();
@@ -73,10 +74,10 @@ export default function QualityGuaranteedPage() {
 
         <div className="relative min-h-[320px] lg:min-h-[460px] bg-slate-900 overflow-hidden">
           <img
-            src={
-              hero.bgMediaUrl ||
+            src={resolveImageUrl(
+              hero.bgMediaUrl,
               'https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=1200&q=80'
-            }
+            )}
             alt="Quality Guaranteed Fuel Canopy"
             className="w-full h-full object-cover"
           />
@@ -147,7 +148,7 @@ export default function QualityGuaranteedPage() {
         <section className="max-w-[1448px] mx-auto w-[calc(100%-32px)] sm:w-[calc(100%-64px)] mt-12 sm:mt-16">
           <div className="rounded-[24px] overflow-hidden max-h-[460px] shadow-sm border border-slate-200/80">
             <img
-              src={page.showcaseImage1}
+              src={resolveImageUrl(page.showcaseImage1)}
               alt="Road Trip Confidence"
               className="w-full h-full object-cover"
               loading="lazy"
@@ -206,7 +207,7 @@ export default function QualityGuaranteedPage() {
         <section className="max-w-[1448px] mx-auto w-[calc(100%-32px)] sm:w-[calc(100%-64px)] mt-12 sm:mt-16">
           <div className="rounded-[24px] overflow-hidden max-h-[460px] shadow-sm border border-slate-200/80">
             <img
-              src={page.showcaseImage2}
+              src={resolveImageUrl(page.showcaseImage2)}
               alt="S&B Modern Forecourt Canopy"
               className="w-full h-full object-cover"
               loading="lazy"

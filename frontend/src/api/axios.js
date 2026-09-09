@@ -8,6 +8,26 @@ export const API_URL =
 
 export const API_ORIGIN = API_URL.replace(/\/api\/?$/, '');
 
+export const BACKEND_URL =
+  import.meta.env.VITE_BACKEND_URL || API_ORIGIN;
+
+export const getAssetUrl = (path) => {
+  if (!path || path === 'none') return '';
+  if (typeof path !== 'string' || path.trim() === '') return '';
+  const cleanPath = path.trim();
+  if (cleanPath.startsWith('data:') || cleanPath.startsWith('blob:')) return cleanPath;
+  if (import.meta.env.PROD && (cleanPath.startsWith('http://localhost') || cleanPath.startsWith('http://127.0.0.1'))) {
+    try {
+      const parsed = new URL(cleanPath);
+      return `${API_ORIGIN}${parsed.pathname}${parsed.search}`;
+    } catch {
+      // fallback
+    }
+  }
+  if (cleanPath.startsWith('http://') || cleanPath.startsWith('https://')) return cleanPath;
+  return `${API_ORIGIN}${cleanPath.startsWith('/') ? '' : '/'}${cleanPath}`;
+};
+
 const api = axios.create({
   baseURL: API_URL,
   withCredentials: true, // send httpOnly cookies

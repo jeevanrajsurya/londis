@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { Menu, X, ArrowRight, ChevronDown } from 'lucide-react';
 import { useQuery } from '@tanstack/react-query';
-import { SafeImage } from '../../utils/imageHelper';
+import { SafeImage, resolveImageUrl } from '../../utils/imageHelper';
 import { getCardsRewardsPageSettings } from '../../api/client';
 
 const defaultNavLinks = [
@@ -105,7 +105,7 @@ export default function Navbar({ navigationData, onOpenValetModal, onOpenFleetMo
               {showLang && (
                 <div className="flex items-center gap-2 font-gotham text-[13px] text-white/95 mr-6 sm:mr-8 font-medium">
                   <img
-                    src="/uploads/globe-white.svg"
+                    src={resolveImageUrl('/uploads/globe-white.svg')}
                     alt=""
                     className="w-4 h-4 opacity-90"
                   />
@@ -151,7 +151,7 @@ export default function Navbar({ navigationData, onOpenValetModal, onOpenFleetMo
                     >
                       <span>{supplierText}</span>
                       <img
-                        src="/uploads/nozzle.svg"
+                        src={resolveImageUrl('/uploads/nozzle.svg')}
                         alt=""
                         className="w-4 h-4 object-contain brightness-0 invert"
                       />
@@ -163,7 +163,7 @@ export default function Navbar({ navigationData, onOpenValetModal, onOpenFleetMo
                     >
                       <span>{supplierText}</span>
                       <img
-                        src="/uploads/nozzle.svg"
+                        src={resolveImageUrl('/uploads/nozzle.svg')}
                         alt=""
                         className="w-4 h-4 object-contain brightness-0 invert"
                       />

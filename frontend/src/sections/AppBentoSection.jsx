@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { resolveImageUrl } from '../utils/imageHelper';
 
 export default function AppBentoSection({ specialtyData }) {
   // If section is explicitly disabled in Admin CMS, do not render
@@ -9,13 +10,14 @@ export default function AppBentoSection({ specialtyData }) {
 
   // Purely dynamic CMS values without hardcoded fallback text or images
   const bgImageUrl = typeof specialtyData?.bgImageUrl === 'string' ? specialtyData.bgImageUrl.trim() : '';
-  const safeBg = bgImageUrl && bgImageUrl !== 'none' ? bgImageUrl : '';
+  const safeBg = bgImageUrl && bgImageUrl !== 'none' ? resolveImageUrl(bgImageUrl) : '';
 
   // Permanent middle-column smartphone mockup (locked design element)
-  const phoneImg = '/uploads/Cropped-phone.jpg';
+  const phoneImg = resolveImageUrl('/uploads/Cropped-phone.jpg');
 
-  const appIcon = typeof specialtyData?.appIconUrl === 'string' ? specialtyData.appIconUrl.trim() : '';
-  const showIcon = Boolean(appIcon && appIcon !== 'none');
+  const rawAppIcon = typeof specialtyData?.appIconUrl === 'string' ? specialtyData.appIconUrl.trim() : '';
+  const appIcon = resolveImageUrl(rawAppIcon);
+  const showIcon = Boolean(rawAppIcon && rawAppIcon !== 'none');
 
   const leftTitle = typeof specialtyData?.leftTitle === 'string' ? specialtyData.leftTitle.trim() : '';
   const leftDesc = typeof specialtyData?.leftDescription === 'string' ? specialtyData.leftDescription.trim() : '';
@@ -148,12 +150,12 @@ export default function AppBentoSection({ specialtyData }) {
             </div>
             <img
               className="fuels-specialty-card__phone-frame"
-              src="/uploads/Phone-frame-bottom.png"
+              src={resolveImageUrl('/uploads/Phone-frame-bottom.png')}
               alt=""
             />
             <img
               className="fuels-specialty-card__phone-frame-top"
-              src="/uploads/Phone-frame-top.png"
+              src={resolveImageUrl('/uploads/Phone-frame-top.png')}
               alt=""
             />
           </div>
@@ -185,7 +187,7 @@ export default function AppBentoSection({ specialtyData }) {
                   rel="noopener noreferrer"
                 >
                   <img
-                    src="/uploads/app-store.png"
+                    src={resolveImageUrl('/uploads/app-store.png')}
                     alt="Download on the App Store"
                     loading="lazy"
                   />
@@ -198,7 +200,7 @@ export default function AppBentoSection({ specialtyData }) {
                   rel="noopener noreferrer"
                 >
                   <img
-                    src="/uploads/google-play.png"
+                    src={resolveImageUrl('/uploads/google-play.png')}
                     alt="Get it on Google Play"
                     loading="lazy"
                   />

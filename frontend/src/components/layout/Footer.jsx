@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { SafeImage } from '../../utils/imageHelper';
+import { SafeImage, resolveImageUrl } from '../../utils/imageHelper';
 
 const defaultCol1 = [
   { name: 'About Us', to: '/about' },
@@ -295,7 +295,7 @@ export default function Footer({
                         aria-label="Instagram"
                       >
                         <img
-                          src="/uploads/instagram.svg"
+                          src={resolveImageUrl('/uploads/instagram.svg')}
                           alt="Instagram"
                           className="w-full h-full object-contain"
                         />
@@ -310,7 +310,7 @@ export default function Footer({
                         aria-label="Facebook"
                       >
                         <img
-                          src="/uploads/facebook.svg"
+                          src={resolveImageUrl('/uploads/facebook.svg')}
                           alt="Facebook"
                           className="w-full h-full object-contain"
                         />
@@ -325,7 +325,7 @@ export default function Footer({
                         aria-label="YouTube"
                       >
                         <img
-                          src="/uploads/youtube.svg"
+                          src={resolveImageUrl('/uploads/youtube.svg')}
                           alt="YouTube"
                           className="w-full h-full object-contain"
                         />

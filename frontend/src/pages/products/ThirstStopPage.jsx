@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { ArrowLeft, MapPin, Search } from 'lucide-react';
 import { getOurProductsPageSettings } from '../../api/client';
 import { fallbackOurProductsCms } from '../../data/ourProductsData';
+import { resolveImageUrl } from '../../utils/imageHelper';
 
 export default function ThirstStopPage() {
   const navigate = useNavigate();
@@ -17,12 +18,12 @@ export default function ThirstStopPage() {
   });
 
   const cms = cmsData || fallbackOurProductsCms;
-  const page = cms.subpages?.thirstStop || fallbackOurProductsCms.subpages.thirstStop;
-  const hero = page.hero || {};
-  const locator = page.locator || {};
-  const featuredProducts = Array.isArray(page.featuredProducts) ? page.featuredProducts : [];
-  const limitedTimeOffers = Array.isArray(page.limitedTimeOffers) ? page.limitedTimeOffers : [];
-  const everydayClassics = Array.isArray(page.everydayClassics) ? page.everydayClassics : [];
+  const thirstStop = cms.subpages?.thirstStop || fallbackOurProductsCms.subpages.thirstStop;
+  const hero = thirstStop.hero || {};
+  const locator = thirstStop.locator || {};
+  const featuredProducts = Array.isArray(thirstStop.featuredProducts) ? thirstStop.featuredProducts : [];
+  const limitedTimeOffers = Array.isArray(thirstStop.limitedTimeOffers) ? thirstStop.limitedTimeOffers : [];
+  const everydayClassics = Array.isArray(thirstStop.everydayClassics) ? thirstStop.everydayClassics : [];
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();
@@ -68,10 +69,10 @@ export default function ThirstStopPage() {
         {/* Right Side: High-Res Beverage Photo */}
         <div className="relative min-h-[320px] lg:min-h-[460px] bg-slate-900 overflow-hidden">
           <img
-            src={
-              hero.bgMediaUrl ||
+            src={resolveImageUrl(
+              hero.bgMediaUrl,
               'https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=1200&q=80'
-            }
+            )}
             alt="Cold Beverages Lineup"
             className="w-full h-full object-cover"
           />
@@ -134,7 +135,7 @@ export default function ThirstStopPage() {
               >
                 <div className="aspect-square w-full rounded-2xl bg-slate-50 overflow-hidden relative mb-5 flex items-center justify-center p-6 border border-slate-100">
                   <img
-                    src={item.imageUrl}
+                    src={resolveImageUrl(item.imageUrl)}
                     alt={item.name}
                     className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"
@@ -181,7 +182,7 @@ export default function ThirstStopPage() {
               >
                 <div className="aspect-square w-full rounded-2xl bg-slate-50 overflow-hidden relative mb-5 flex items-center justify-center p-6 border border-slate-100">
                   <img
-                    src={offer.imageUrl}
+                    src={resolveImageUrl(offer.imageUrl)}
                     alt={offer.title}
                     className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"
@@ -223,7 +224,7 @@ export default function ThirstStopPage() {
               >
                 <div className="aspect-square w-full rounded-2xl bg-slate-50 overflow-hidden relative mb-5 flex items-center justify-center p-6 border border-slate-100">
                   <img
-                    src={classic.imageUrl}
+                    src={resolveImageUrl(classic.imageUrl)}
                     alt={classic.title}
                     className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"

@@ -13,6 +13,7 @@ import {
 } from 'lucide-react';
 import { getOurProductsPageSettings } from '../../api/client';
 import { fallbackOurProductsCms } from '../../data/ourProductsData';
+import { resolveImageUrl } from '../../utils/imageHelper';
 
 export default function BusinessFleetPage() {
   const [openFaqIndex, setOpenFaqIndex] = useState(null);
@@ -91,10 +92,10 @@ export default function BusinessFleetPage() {
 
         <div className="relative min-h-[320px] lg:min-h-[460px] bg-slate-900 overflow-hidden">
           <img
-            src={
-              hero.bgMediaUrl ||
+            src={resolveImageUrl(
+              hero.bgMediaUrl,
               'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1200&q=80'
-            }
+            )}
             alt="Commercial Fleet Vehicles"
             className="w-full h-full object-cover"
           />
@@ -172,7 +173,7 @@ export default function BusinessFleetPage() {
 
                   <div className="aspect-[1.58/1] rounded-2xl bg-slate-50 overflow-hidden relative border border-slate-100 p-4 flex items-center justify-center">
                     <img
-                      src={sol.imageUrl}
+                      src={resolveImageUrl(sol.imageUrl)}
                       alt={sol.title}
                       className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                       loading="lazy"
@@ -221,10 +222,10 @@ export default function BusinessFleetPage() {
           <div className="bg-white rounded-[24px] p-8 sm:p-12 border border-slate-200/80 shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-4 rounded-2xl overflow-hidden min-h-[240px] max-h-[280px]">
               <img
-                src={
-                  supportBanner.imageUrl ||
+                src={resolveImageUrl(
+                  supportBanner.imageUrl,
                   'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80'
-                }
+                )}
                 alt="Fleet Expert Advisor"
                 className="w-full h-full object-cover"
               />

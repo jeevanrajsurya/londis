@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { getSettingByKey, updateSetting } from '../api/settings';
 import { uploadImage } from '../api/upload';
+import { getAssetUrl } from '../api/axios';
 import {
   Mail,
   Save,
@@ -571,7 +572,7 @@ export default function ContactPageCmsTab() {
                 <div className="relative w-full h-36 rounded-xl overflow-hidden border border-slate-200 bg-slate-100 mt-2">
                   {(formData.hero.bgMediaType === 'video' || /\.(mp4|webm|mov|m4v|ogg)(\?.*)?$/i.test(formData.hero.bgMediaUrl)) ? (
                     <video
-                      src={formData.hero.bgMediaUrl}
+                      src={getAssetUrl(formData.hero.bgMediaUrl)}
                       muted
                       autoPlay
                       loop
@@ -580,7 +581,7 @@ export default function ContactPageCmsTab() {
                     />
                   ) : (
                     <img
-                      src={formData.hero.bgMediaUrl}
+                      src={getAssetUrl(formData.hero.bgMediaUrl)}
                       alt="Hero background preview"
                       className="w-full h-full object-cover"
                     />
@@ -603,7 +604,7 @@ export default function ContactPageCmsTab() {
                 <>
                   {(formData.hero.bgMediaType === 'video' || /\.(mp4|webm|mov|m4v|ogg)(\?.*)?$/i.test(formData.hero.bgMediaUrl)) ? (
                     <video
-                      src={formData.hero.bgMediaUrl}
+                      src={getAssetUrl(formData.hero.bgMediaUrl)}
                       autoPlay
                       loop
                       muted
@@ -612,7 +613,7 @@ export default function ContactPageCmsTab() {
                     />
                   ) : (
                     <img
-                      src={formData.hero.bgMediaUrl}
+                      src={getAssetUrl(formData.hero.bgMediaUrl)}
                       alt="Hero preview"
                       className="absolute inset-0 w-full h-full object-cover z-0"
                     />
@@ -761,7 +762,7 @@ export default function ContactPageCmsTab() {
                     {card.imageUrl && (
                       <div className="w-full h-32 rounded-lg overflow-hidden mt-1 border border-slate-200 bg-slate-100">
                         <img
-                          src={card.imageUrl}
+                          src={getAssetUrl(card.imageUrl)}
                           alt="Card preview"
                           className="w-full h-full object-cover"
                         />

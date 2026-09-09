@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { getSettingByKey, updateSetting } from '../api/settings';
 import { uploadImage } from '../api/upload';
+import { getAssetUrl } from '../api/axios';
 import {
   Save,
   RotateCcw,
@@ -538,7 +539,7 @@ export default function AboutPageCmsTab() {
                   {formData.hero.bgMediaType === 'video' ||
                   /\.(mp4|webm|mov|m4v|ogg)(\?.*)?$/i.test(formData.hero.bgMediaUrl) ? (
                     <video
-                      src={formData.hero.bgMediaUrl}
+                      src={getAssetUrl(formData.hero.bgMediaUrl)}
                       autoPlay
                       loop
                       muted
@@ -547,7 +548,7 @@ export default function AboutPageCmsTab() {
                     />
                   ) : (
                     <img
-                      src={formData.hero.bgMediaUrl}
+                      src={getAssetUrl(formData.hero.bgMediaUrl)}
                       alt="Hero preview"
                       className="absolute inset-0 w-full h-full object-cover z-0"
                     />
@@ -727,7 +728,7 @@ export default function AboutPageCmsTab() {
               {formData.actionSection.bannerImageUrl && (
                 <div className="pt-4 flex justify-center">
                   <img
-                    src={formData.actionSection.bannerImageUrl}
+                    src={getAssetUrl(formData.actionSection.bannerImageUrl)}
                     alt="Sponsors preview"
                     className="max-h-24 object-contain mx-auto"
                   />
@@ -976,7 +977,7 @@ export default function AboutPageCmsTab() {
                     <div className="w-full sm:w-52 h-36 rounded-2xl overflow-hidden bg-slate-300/60 shrink-0 shadow-sm">
                       {card.imageUrl ? (
                         <img
-                          src={card.imageUrl}
+                          src={getAssetUrl(card.imageUrl)}
                           alt={card.title}
                           className="w-full h-full object-cover"
                         />

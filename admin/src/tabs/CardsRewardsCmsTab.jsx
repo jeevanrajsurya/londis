@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { getSettingByKey, updateSetting } from '../api/settings';
 import { uploadImage } from '../api/upload';
+import { getAssetUrl } from '../api/axios';
 import {
   Save,
   RotateCcw,
@@ -433,7 +434,7 @@ export default function CardsRewardsCmsTab() {
             <div className="bg-white rounded-[24px] p-8 shadow-sm border border-slate-200/80 flex flex-col md:flex-row items-center justify-between gap-8">
               <div className="bg-[#016839] rounded-[20px] p-6 flex items-center justify-center w-full md:w-[280px] h-[160px] shrink-0 shadow-md">
                 <img
-                  src={formData.navDropdown?.cardImage}
+                  src={getAssetUrl(formData.navDropdown?.cardImage)}
                   alt="Preview"
                   className="max-h-full max-w-full object-contain drop-shadow"
                 />

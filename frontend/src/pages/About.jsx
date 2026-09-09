@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { Link } from 'react-router-dom';
 import { getAboutPageSettings } from '../api/client';
 import { fallbackAboutCms } from '../data/forecourtData';
+import { resolveImageUrl } from '../utils/imageHelper';
 
 export default function About() {
   const { data: cmsData } = useQuery({
@@ -29,7 +30,7 @@ export default function About() {
             {cms.hero?.bgMediaType === 'video' ||
             /\.(mp4|webm|mov|m4v|ogg)(\?.*)?$/i.test(cms.hero.bgMediaUrl) ? (
               <video
-                src={cms.hero.bgMediaUrl.trim()}
+                src={resolveImageUrl(cms.hero.bgMediaUrl.trim())}
                 autoPlay
                 loop
                 muted
@@ -38,7 +39,7 @@ export default function About() {
               />
             ) : (
               <img
-                src={cms.hero.bgMediaUrl.trim()}
+                src={resolveImageUrl(cms.hero.bgMediaUrl.trim())}
                 alt={cms.hero?.title || 'About Us Hero'}
                 className="absolute inset-0 w-full h-full object-cover z-0"
               />
@@ -137,7 +138,7 @@ export default function About() {
           ) && (
             <figure className="mt-12 sm:mt-16 max-w-[760px] sm:max-w-[840px] mx-auto flex justify-center items-center">
               <img
-                src={cms.actionSection.bannerImageUrl.trim()}
+                src={resolveImageUrl(cms.actionSection.bannerImageUrl.trim())}
                 alt={cms.actionSection?.title || 'Community Sponsors and Partners'}
                 className="w-full h-auto object-contain mx-auto"
                 loading="lazy"
@@ -164,7 +165,7 @@ export default function About() {
               {hasImage && (
                 <div className="w-full lg:w-1/2 lg:max-w-[600px] aspect-square sm:aspect-[4/3] lg:aspect-square rounded-[24px] overflow-hidden shrink-0 bg-slate-200/50 shadow-sm">
                   <img
-                    src={card.imageUrl.trim()}
+                    src={resolveImageUrl(card.imageUrl.trim())}
                     alt={card.title || 'Feature Story'}
                     className="w-full h-full object-cover rounded-[24px] transition-transform duration-700 hover:scale-102"
                     loading="lazy"

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { resolveImageUrl } from '../utils/imageHelper';
 
 export default function HeroSection({ heroData }) {
   const [videoFailed, setVideoFailed] = useState(false);
@@ -9,7 +10,8 @@ export default function HeroSection({ heroData }) {
   }
 
   // Purely dynamic CMS values without hardcoded fallback text or images
-  const videoUrl = typeof heroData?.videoUrl === 'string' ? heroData.videoUrl.trim() : '';
+  const rawVideoUrl = typeof heroData?.videoUrl === 'string' ? heroData.videoUrl.trim() : '';
+  const videoUrl = resolveImageUrl(rawVideoUrl);
   const line1 = typeof heroData?.headlineLine1 === 'string' ? heroData.headlineLine1.trim() : '';
   const line2 = typeof heroData?.headlineLine2 === 'string' ? heroData.headlineLine2.trim() : '';
   const ctaText = typeof heroData?.buttonText === 'string' ? heroData.buttonText.trim() : '';

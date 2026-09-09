@@ -729,13 +729,13 @@ export default function NavbarFooterTab() {
                                 src={
                                   formData.topBar.supplierShapeImageUrl
                                     ? getAssetUrl(formData.topBar.supplierShapeImageUrl)
-                                    : '/uploads/go-shape-londis-green-utility-bar.png'
+                                    : getAssetUrl('/uploads/go-shape-londis-green-utility-bar.png')
                                 }
                                 alt="Angle preview"
                                 className="h-[46px] w-auto pointer-events-none"
                                 onError={(e) => {
                                   e.currentTarget.src =
-                                    '/uploads/go-shape-londis-green-utility-bar.png';
+                                    getAssetUrl('/uploads/go-shape-londis-green-utility-bar.png');
                                 }}
                               />
                             )}
@@ -744,7 +744,7 @@ export default function NavbarFooterTab() {
                               {formData.topBar.supplierButtonText || 'Become A Fuel Supplier'}
                             </span>
                             <img
-                              src="/uploads/nozzle.svg"
+                              src={getAssetUrl('/uploads/nozzle.svg')}
                               alt=""
                               className="w-3.5 h-3.5 object-contain brightness-0 invert"
                             />

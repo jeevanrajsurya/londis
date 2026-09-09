@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { toast } from 'react-hot-toast';
 import { Upload, FileText, X, Loader2 } from 'lucide-react';
-import { SafeImage } from '../utils/imageHelper';
+import { SafeImage, resolveImageUrl } from '../utils/imageHelper';
 import { submitNewsletterSubscription } from '../api/client';
 
 export default function ConocoBentoRows({
@@ -31,7 +31,7 @@ export default function ConocoBentoRows({
     bannerData?.bannerImageUrl &&
     bannerData.bannerImageUrl !== 'none' &&
     bannerData.bannerImageUrl.trim() !== ''
-      ? bannerData.bannerImageUrl
+      ? resolveImageUrl(bannerData.bannerImageUrl)
       : null;
   const bannerTitle =
     bannerData?.title !== undefined
@@ -64,7 +64,7 @@ export default function ConocoBentoRows({
     bentoGridData?.igCard?.imageUrl &&
     bentoGridData.igCard.imageUrl !== 'none' &&
     bentoGridData.igCard.imageUrl.trim() !== ''
-      ? bentoGridData.igCard.imageUrl
+      ? resolveImageUrl(bentoGridData.igCard.imageUrl)
       : null;
   const igTitle =
     bentoGridData?.igCard?.title !== undefined
@@ -88,7 +88,7 @@ export default function ConocoBentoRows({
     bentoGridData?.gameCard?.imageUrl &&
     bentoGridData.gameCard.imageUrl !== 'none' &&
     bentoGridData.gameCard.imageUrl.trim() !== ''
-      ? bentoGridData.gameCard.imageUrl
+      ? resolveImageUrl(bentoGridData.gameCard.imageUrl)
       : null;
   const gameTitle =
     bentoGridData?.gameCard?.title !== undefined
@@ -163,7 +163,7 @@ export default function ConocoBentoRows({
     featureCardsData?.stationCard?.bgImageUrl &&
     featureCardsData.stationCard.bgImageUrl !== 'none' &&
     featureCardsData.stationCard.bgImageUrl.trim() !== ''
-      ? featureCardsData.stationCard.bgImageUrl
+      ? resolveImageUrl(featureCardsData.stationCard.bgImageUrl)
       : null;
   const stationPumpsImg =
     featureCardsData?.stationCard?.pumpsImageUrl &&

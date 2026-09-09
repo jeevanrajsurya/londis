@@ -11,6 +11,7 @@ import {
 } from 'lucide-react';
 import { getOurProductsPageSettings } from '../../api/client';
 import { fallbackOurProductsCms } from '../../data/ourProductsData';
+import { resolveImageUrl } from '../../utils/imageHelper';
 
 export default function EasyPayPage() {
   const [activeFaqCategory, setActiveFaqCategory] = useState('All');
@@ -80,10 +81,10 @@ export default function EasyPayPage() {
 
         <div className="relative min-h-[320px] lg:min-h-[460px] bg-slate-900 overflow-hidden">
           <img
-            src={
-              hero.bgMediaUrl ||
+            src={resolveImageUrl(
+              hero.bgMediaUrl,
               'https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=1200&q=80'
-            }
+            )}
             alt="Easy Pay Refueling Savings"
             className="w-full h-full object-cover"
           />
@@ -194,7 +195,7 @@ export default function EasyPayPage() {
                   }`}
                 >
                   <img
-                    src={step.imageUrl}
+                    src={resolveImageUrl(step.imageUrl)}
                     alt={step.title}
                     className="w-full h-full object-cover"
                     loading="lazy"

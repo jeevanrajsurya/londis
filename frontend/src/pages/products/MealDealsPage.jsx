@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { ArrowLeft, MapPin } from 'lucide-react';
 import { getOurProductsPageSettings } from '../../api/client';
 import { fallbackOurProductsCms } from '../../data/ourProductsData';
+import { resolveImageUrl } from '../../utils/imageHelper';
 
 export default function MealDealsPage() {
   const { data: cmsData } = useQuery({
@@ -55,10 +56,10 @@ export default function MealDealsPage() {
 
         <div className="relative min-h-[320px] lg:min-h-[460px] bg-slate-900 overflow-hidden">
           <img
-            src={
-              hero.bgMediaUrl ||
+            src={resolveImageUrl(
+              hero.bgMediaUrl,
               'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1200&q=80'
-            }
+            )}
             alt="Fresh In-Store Meal Deals"
             className="w-full h-full object-cover"
           />
@@ -98,7 +99,7 @@ export default function MealDealsPage() {
                   >
                     <div className="aspect-square w-full rounded-2xl bg-slate-50 overflow-hidden relative mb-4 flex items-center justify-center p-4 border border-slate-100">
                       <img
-                        src={item.imageUrl}
+                        src={resolveImageUrl(item.imageUrl)}
                         alt={item.name}
                         className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                         loading="lazy"
