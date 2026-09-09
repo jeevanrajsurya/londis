@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { getApplicationsAdmin, updateApplicationStatus, deleteApplication } from '../api/jobs';
+import { getAssetUrl } from '../api/axios';
 import { Briefcase, FileText, Download, Trash2, Mail, Phone } from 'lucide-react';
 import StatusBadge from '../components/common/StatusBadge';
 import toast from 'react-hot-toast';
@@ -124,7 +125,7 @@ export default function CareersTab() {
 
               {selectedApp.resumeUrl && (
                 <a
-                  href={`http://localhost:5000${selectedApp.resumeUrl}`}
+                  href={getAssetUrl(selectedApp.resumeUrl)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 w-full py-2.5 px-4 bg-[#e8f7ee] hover:bg-[#e8f7ee]/80 text-[#016839] font-semibold text-xs rounded-xl border border-[#016839]/30 transition-colors"

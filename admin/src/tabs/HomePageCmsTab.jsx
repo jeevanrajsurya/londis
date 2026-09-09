@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { getSettingByKey, updateSetting } from '../api/settings';
 import { uploadImage } from '../api/upload';
+import { getAssetUrl, CLIENT_URL } from '../api/axios';
 import {
   Layout,
   Save,
@@ -203,9 +204,7 @@ function MediaField({ label, value, defaultValue, onChange, hint, isVideo = fals
   };
 
   const previewSrc = isRemoved ? '' : (value || defaultValue);
-  const displaySrc = previewSrc?.startsWith('http')
-    ? previewSrc
-    : `http://localhost:5000${previewSrc}`;
+  const displaySrc = getAssetUrl(previewSrc);
 
   const isVideoPreview =
     isVideoField ||
@@ -263,9 +262,9 @@ function MediaField({ label, value, defaultValue, onChange, hint, isVideo = fals
               alt={label}
               className="w-full h-full object-cover"
               onError={(e) => {
-                e.currentTarget.src = defaultValue?.startsWith('http')
-                  ? defaultValue
-                  : `http://localhost:5000${defaultValue || ''}`;
+                if (defaultValue) {
+                  e.currentTarget.src = getAssetUrl(defaultValue);
+                }
               }}
             />
           )}
@@ -873,7 +872,7 @@ export default function HomePageCmsTab() {
 
         <div className="flex items-center gap-2.5">
           <a
-            href="http://localhost:5173"
+            href={CLIENT_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-600 bg-slate-100 hover:bg-slate-200 px-3.5 py-2.5 rounded-xl transition-colors"

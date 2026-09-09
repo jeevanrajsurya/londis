@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Upload, X, Loader2 } from 'lucide-react';
 import { uploadImage } from '../../api/upload';
+import { getAssetUrl } from '../../api/axios';
 import toast from 'react-hot-toast';
 
 export default function ImageUploader({ value, onChange, label = 'Upload Image' }) {
@@ -33,7 +34,7 @@ export default function ImageUploader({ value, onChange, label = 'Upload Image' 
       {value ? (
         <div className="relative inline-block border border-slate-200 rounded-lg overflow-hidden group">
           <img
-            src={value.startsWith('http') ? value : `http://localhost:5000${value}`}
+            src={getAssetUrl(value)}
             alt="Uploaded preview"
             className="w-40 h-28 object-cover"
           />

@@ -1,9 +1,9 @@
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import toast from 'react-hot-toast';
 import { getApplications, updateApplicationStatus } from '../api/jobs';
+import { API_ORIGIN } from '../api/axios';
 
 const STATUSES = ['RECEIVED', 'REVIEWING', 'INTERVIEW', 'REJECTED', 'HIRED'];
-const API_ORIGIN = (import.meta.env.VITE_API_URL || 'http://localhost:5000/api').replace(/\/api$/, '');
 
 export default function Jobs() {
   const qc = useQueryClient();

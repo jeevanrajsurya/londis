@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { getSettingByKey, updateSetting } from '../api/settings';
 import { uploadImage } from '../api/upload';
+import { getAssetUrl, CLIENT_URL, ADMIN_URL } from '../api/axios';
 import {
   Compass,
   Save,
@@ -67,7 +68,7 @@ export const DEFAULT_NAVIGATION_CMS = {
       { name: 'Terms & Conditions', to: '/about' },
       { name: 'Privacy Statement', to: '/about' },
       { name: 'California Supply Disclosure', to: '/about' },
-      { name: 'Admin Portal', to: 'http://localhost:5174' },
+      { name: 'Admin Portal', to: ADMIN_URL },
     ],
     instagramUrl: 'https://www.instagram.com/conoco',
     facebookUrl: 'https://www.facebook.com/conoco',
@@ -100,9 +101,7 @@ function MediaField({ label, value, defaultValue, onChange, hint, allowClear = t
   };
 
   const previewSrc = isRemoved ? '' : (value || defaultValue);
-  const displaySrc = previewSrc?.startsWith('http')
-    ? previewSrc
-    : `http://localhost:5000${previewSrc}`;
+  const displaySrc = getAssetUrl(previewSrc);
 
   return (
     <div className="bg-slate-50 border border-slate-200 rounded-xl p-4 space-y-3">
@@ -142,9 +141,7 @@ function MediaField({ label, value, defaultValue, onChange, hint, allowClear = t
               className="max-w-full max-h-full object-contain"
               onError={(e) => {
                 if (defaultValue) {
-                  e.currentTarget.src = defaultValue.startsWith('http')
-                    ? defaultValue
-                    : `http://localhost:5000${defaultValue}`;
+                  e.currentTarget.src = getAssetUrl(defaultValue);
                 }
               }}
             />
@@ -439,7 +436,7 @@ export default function NavbarFooterTab() {
 
         <div className="flex items-center gap-2.5">
           <a
-            href="http://localhost:5173"
+            href={CLIENT_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-600 bg-slate-100 hover:bg-slate-200 px-3.5 py-2.5 rounded-xl transition-colors"
@@ -731,9 +728,7 @@ export default function NavbarFooterTab() {
                               <img
                                 src={
                                   formData.topBar.supplierShapeImageUrl
-                                    ? (formData.topBar.supplierShapeImageUrl.startsWith('http')
-                                        ? formData.topBar.supplierShapeImageUrl
-                                        : `http://localhost:5000${formData.topBar.supplierShapeImageUrl}`)
+                                    ? getAssetUrl(formData.topBar.supplierShapeImageUrl)
                                     : '/uploads/go-shape-londis-green-utility-bar.png'
                                 }
                                 alt="Angle preview"

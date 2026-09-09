@@ -5,6 +5,7 @@ import {
   updateNewsletterStatus,
   deleteNewsletterSubmission,
 } from '../api/newsletter';
+import { getAssetUrl } from '../api/axios';
 import {
   MailCheck,
   Download,
@@ -323,7 +324,7 @@ export default function NewsletterSubmissionsTab() {
                     Uploaded file is stored safely on the server and available for review.
                   </p>
                   <a
-                    href={`http://localhost:5000${selectedSub.resumeUrl}`}
+                    href={getAssetUrl(selectedSub.resumeUrl)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-2 w-full py-2.5 px-4 bg-[#016839] hover:bg-[#014d28] text-white font-bold text-xs rounded-xl shadow-sm transition-all hover:scale-[1.01]"

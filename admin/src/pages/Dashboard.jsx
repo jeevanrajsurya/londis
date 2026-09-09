@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useAuth } from '../context/AuthContext';
+import { CLIENT_URL } from '../api/axios';
 import {
   Fuel,
   Layout,
@@ -107,7 +108,7 @@ export default function Dashboard() {
         {/* User Footer & Quick Links */}
         <div className="pt-6 border-t border-slate-800 space-y-4">
           <a
-            href="http://localhost:5173"
+            href={CLIENT_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-between px-3 py-2 text-xs text-slate-400 hover:text-[#016839] bg-slate-900/50 hover:bg-slate-900 rounded-lg border border-slate-800/60 transition-colors"
